@@ -27,19 +27,40 @@ environment in the United States region since the computer-Using Agents
 is not available in all the regions by default. You will use the newly
 created environment for this lab alone.
 
-1.  Open +++<https://admin.powerplatform.microsoft.com/+++>.\
-    ![](media/media/image2.png){width="6.25in"
-    height="3.5208333333333335in"}
+1.  Open <https://admin.powerplatform.microsoft.com/+++>.
+
+    ![](media/media/image2.png)
 
 2.  Select **Manage** from the left pane and then select the environment
     that stars with **User1**.
 
-> ![](media/media/image3.png){width="6.5in"
-> height="2.5104166666666665in"}
+    ![](media/media/image3.png)
+
+    > **Note:** If you are not able to see User 1 please follow bleow steps.
+
+1. Sign in to the **Power Platform admin center** and select **Environments** under **Manage**. Select **New**.
+
+    ![](media/media/l71.png)
+
+2. In the **New environment** pane, select **Sandbox** as the environment type, keep **United States - Default** as the region, and enter **User 1** as the environment name. Enable **Add a Dataverse data store** and select **Next**.
+
+    ![](media/media/l72.png)
+
+3. In the **Add Dataverse** pane, keep **English (United States)** as the language and **USD ($)** as the currency. Under **Security group**, select **Select**.
+
+    ![](media/media/l73.png)
+ 
+4. In the **Edit security group** pane, select **None** under **Open access** and then select **Done**.
+
+    ![](media/media/l74.png) 
+
+5. Verify that **None** is selected as the security group and select **Save** to add the Dataverse data store.
+
+    ![](media/media/l75.png)   
 
 3.  Copy the Environment ID for future use:
 
-![](media/media/image4.png){width="6.5in" height="3.59375in"}
+    ![](media/media/image4.png)
 
 ## Task 1: Create and Configure an Autonomous Agent
 
@@ -52,42 +73,46 @@ email requests and initiate the appropriate automation flow based on
 subject line filtering.
 
 1.  Open a browser and navigate to Copilot Studio using the url-
-    +++<https://copilotstudio.microsoft.com/environments/>\< Environment
-    ID \>+++ and login using your credentials if not done already.\
-    ![](media/media/image5.png){width="6.25in" height="0.8125in"}
+    <https://copilotstudio.microsoft.com/environments/>\< Environment
+    ID \> and login using your credentials if not done already.
+
+    > **Note:** Replace < Environment
+    ID \> with copied environment id.
+    
+    ![](media/media/image5.png)
 
 2.  Select the  User1 environment from the top right.
 
-![](media/media/image6.png){width="6.5in" height="3.6666666666666665in"}
+    ![](media/media/image6.png)
 
-3.  Select **Create blank agent**.\
-    ![](media/media/image7.png){width="6.25in"
-    height="1.7127405949256342in"}
+3.  Select **Create blank agent**.
 
-4.  Paste the Name as +++Portfolio Lookup Agent+++ and select Save to
-    rename the default name of the agent.\
-    ![](media/media/image8.png){width="6.25in"
-    height="2.8333333333333335in"}
+    ![](media/media/image7.png)
+    
 
-5.  Scroll down to the triggers section and click **+Add trigger**.\
-    ![](media/media/image9.png){width="6.25in"
-    height="3.4270833333333335in"}
+4.  Paste the Name as **Portfolio Lookup Agent** and select Save to
+    rename the default name of the agent.
 
-6.  Search and select -w**hen a new email arrives (V3) (Office 365
-    Outlook** and click on **Next**.\
-    ![](media/media/imagea.png){width="6.25in" height="4.84375in"}
+    ![](media/media/image8.png)
 
-![](media/media/imageb.png){width="6.25in" height="4.827724190726159in"}
+5.  Scroll down to the triggers section and click **+Add trigger**.
 
-7.  In the **Subject Filter (Optional)** field, enter +++Portfolio+++ in
-    the subject line.\
-    ![](media/media/imagec.png){width="6.25in"
-    height="4.729166666666667in"}
+    ![](media/media/image9.png)
+
+6.  Search and select **when a new email arrives (V3) (Office 365 Outlook)** and click on **Next**.
+
+    ![](media/media/imagea.png)
+
+    ![](media/media/imageb.png)
+
+7.  In the **Subject Filter (Optional)** field, enter **Portfolio** in the subject line.
+
+    ![](media/media/imagec.png)
 
 8.  Once the trigger is created, you can **Close** the Time to test your
     trigger dialog.
 
-![](media/media/imaged.png){width="6.5in" height="4.90625in"}
+    ![](media/media/imaged.png)
 
 ## Task 2: Add Computer Use tool
 
@@ -96,57 +121,54 @@ computer, navigates through a website, searches and retrieves financial
 portfolio data. Then use the Office 365 Outlook connector to reply with
 the requested data.
 
-1.  Navigate to **Tools** in the top-level menu. Select **+ New tool**.\
-    ![](media/media/imagee.png){width="6.25in"
-    height="2.1041666666666665in"}
+1.  Navigate to **Tools** in the top-level menu. Select **+ New tool**.
 
-2.  Select **Computer use (preview)**.\
-    ![](media/media/imagef.png){width="6.25in"
-    height="4.447916666666667in"}
+    ![](media/media/imagee.png)
 
+2.  Select **Computer use (preview)**.
+
+    ![](media/media/imagef.png)
 3.  Paste the following Instructions, and then select **Add and
     configure**.
 
-> *+++1. Go to
-> <https://computerusedemos.blob.core.windows.net/web/Portfolio/index.html>.*
->
-> *2. Enter the Portfolio ID in the \"Enter Portfolio ID\" search field
-> and click on the \"Search\" button.*
->
-> *3. Retrieve the \"Client Name\", \"Portfolio Value\" and \"Manager\"
-> values exactly as shown.*
->
-> *4. Return those three values as the final output. If no portfolio
-> data is found, reply that you couldn\'t find a portfolio with the
-> specified ID.+++*
+    ```
+    1. Go to <https://computerusedemos.blob.core.windows.net/web/Portfolio/index.html>.*
 
-![](media/media/image10.png){width="6.5in" height="4.666666666666667in"}
+    2. Enter the Portfolio ID in the \"Enter Portfolio ID\" search field and click on the \"Search\" button.*
 
-4.  Update the **Name** of the Computer use tool as +++Look up portfolio
-    data+++
+    3. Retrieve the \"Client Name\", \"Portfolio Value\" and \"Manager\" values exactly as shown.*
+    4. Return those three values as the final output. If no portfolio data is found, reply that you couldn\'t find a portfolio with the specified ID.*
+    ```
 
-5.  Update the **Description** as +++Search and retrieve financial
-    portfolio data+++
+    ![](media/media/image10.png)
 
-![](media/media/image11.png){width="6.5in" height="3.1875in"}
+4.  Update the **Name** of the Computer use tool as Look up portfolio
+    data
+
+5.  Update the **Description** as Search and retrieve financial
+    portfolio data
+
+    ![](media/media/image11.png)
 
 6.  In the Inputs section select **+ Add input.**
 
-7.  Enter name as +++Portfolio ID+++ and description +++The ID of the
-    portfolio+++ and select **Done**.\
-    ![](media/media/image12.png){width="6.25in" height="2.0in"}
+7.  Enter name as **Portfolio ID** and description **The ID of the
+    portfolio and select**  **Done**
+
+    ![](media/media/image12.png)
 
 8.  Select  **Save**.
 
 ## Task 3: Test the Computer use tool
 
 1.  In the **Instructions** section, select the **Test** button on the
-    right.\
-    ![](media/media/image13.png){width="6.25in" height="3.0625in"}
+    right.
 
-2.  Add the sample value +++44123BCD+++ and select  **Test now**.\
-    ![](media/media/image14.png){width="6.25in"
-    height="3.1041666666666665in"}
+    ![](media/media/image13.png)
+
+2.  Add the sample value **44123BCD** and select  **Test now**.
+
+    ![](media/media/image14.png)
 
 3.  Observe the Computer use tool logging into the computer and
     performing the requested actions:
@@ -158,89 +180,89 @@ the requested data.
       set up for computer use.
 
 4.  Select **Finish testing**.\
-    ![](media/media/image15.png){width="6.25in" height="3.6875in"}
+    ![](media/media/image15.png)
 
 ## Task 4: Setting up email response capabilities
 
 In this task, you will set up the email capability.
 
-1.  Return to the **Tools** tab and select **+ Add a tool** .\
-    ![](media/media/image16.png){width="6.25in" height="1.78125in"}
+1.  Return to the **Tools** tab and select **+ Add a tool** .
 
-2.  Search for +++**Send an email (V2) (Office 365 Outlook)**+++ and
-    select it.\
-    ![](media/media/image17.png){width="6.25in"
-    height="4.427083333333333in"}
+    ![](media/media/image16.png)
 
-3.  Select  **Add and configure**.\
-    ![](media/media/image18.png){width="6.25in"
-    height="4.635416666666667in"}
+2.  Search for **Send an email (V2) (Office 365 Outlook)** and
+    select it.
+    ![](media/media/image17.png)
 
-4.  Update its  **Name** to +++Reply to email+++ and **Description** 
-    to, +++Use this operation to reply to the email received+++ and then
-    select  **Additional details**.\
-    ![](media/media/image19.png){width="6.25in"
-    height="3.1458333333333335in"}
+3.  Select  **Add and configure**.
+
+    ![](media/media/image18.png)
+
+4.  Update its  **Name** to **Reply to email** and **Description** 
+    to, **Use this operation to reply to the email received** and then
+    select  **Additional details**.
+
+    ![](media/media/image19.png)
 
 5.  Under **Additional details**, set  **Credentials to
-    use** to **Maker-provided credentials.**\
-    ![](media/media/image1a.png){width="6.25in"
-    height="3.0833333333333335in"}
+    use** to **Maker-provided credentials.**
+
+    ![](media/media/image1a.png)
 
 6.  Under the **Inputs** section, click on **custom value** against
-    the **To**  input and set its  **Description**  to +++Use the
-    \"from\" email of the triggering received email+++.
+    the **To**  input and set its  **Description**  to **Use the
+    \"from\" email of the triggering received email**.
 
 7.  **Customize**  the  **Subject**  input and set its  Description  to
-    +++Write the email subject+++.
+    **Write the email subject**.
 
-8.  Customize the  **Body** input and set its  Description  to +++Write
-    the email body using HTML and highlight the requested data+++.\
-    ![](media/media/image1b.png){width="6.25in"
-    height="3.0520833333333335in"}
+8.  Customize the  **Body** input and set its  Description  to **Write
+    the email body using HTML and highlight the requested data**.
 
-9.  Click  **Save** to finalize the tool configuration.\
-    ![](media/media/image1c.png){width="6.25in" height="3.46875in"}
+    ![](media/media/image1b.png)
 
-10. Navigate to  **Overview** tab and then  **Edit**  the Instructions.\
-    ![](media/media/image1d.png){width="6.25in"
-    height="3.4583333333333335in"}
+9.  Click  **Save** to finalize the tool configuration.
+
+    ![](media/media/image1c.png)
+
+10. Navigate to  **Overview** tab and then  **Edit**  the Instructions.
+
+    ![](media/media/image1d.png)
 
 11. Paste the following instruction.
 
-*+++When a financial portfolio related request is received, identify the
-Portfolio ID and search for the requested data using \< Look up
-portfolio data \>. Once you have gathered the financial portfolio
-information, use the \< Reply to email \> tool to reply to the original
-email you received. Do not respond with data beyond what was
-requested.++*+
+    ```
+    When a financial portfolio related request is received, identify the
+    Portfolio ID and search for the requested data using \< Look up
+    portfolio data \>. Once you have gathered the financial portfolio
+    information, use the \< Reply to email \> tool to reply to the original
+    email you received. Do not respond with data beyond what was
+    requested.
+    ```
 
-![](media/media/image1e.png){width="6.5in"
-height="3.1979166666666665in"}
+    ![](media/media/image1e.png)
 
 12. Select \< Look up portfolio data \>, enter / and select
-    the **tool** **Look up portfolio data**.\
-    ![](media/media/image1f.png){width="6.25in"
-    height="3.0729166666666665in"}
+    the **tool** **Look up portfolio data**.
+
+    ![](media/media/image1f.png)
 
 13. Similarly, replace \< Reply to email \> with the **tool**, **Reply
     to email**.
 
-![](media/media/image20.png){width="6.5in"
-height="3.3541666666666665in"}
+    ![](media/media/image20.png)
 
 14. Once the replacements are done, as in the screenshot below, select
      **Save**.
 
 15. Select **Settings** from the top right.
 
-![](media/media/image21.png){width="6.5in"
-height="1.6979166666666667in"}
+    ![](media/media/image21.png)
 
 16. **Disable** **Use information from web** under the
-     **Knowledge** section, and select **Save**.\
-    ![](media/media/image22.png){width="6.25in"
-    height="3.4791666666666665in"}
+     **Knowledge** section, and select **Save**.
+
+    ![](media/media/image22.png)
 
 17. Close the **Settings** pane.
 
@@ -252,38 +274,37 @@ have created.
 1.  Send a test email from an email address of your preference to your
     training user's email account with
 
-> Subject: +++Portfolio data request+++
->
-> Body:
->
-> [Hi!]{.mark}
->
-> [I hope you\'re doing well!]{.mark}
->
-> [I\'m looking for the portfolio manager and value of portfolio
-> #44123BCD. Much appreciated.]{.mark}
->
-> [Thanks!]{.mark}
->
-> ![](media/media/image23.png){width="6.5in"
-> height="5.354166666666667in"}
+    ```
+    Subject: +++Portfolio data request+++
+
+    Body:
+
+    Hi!
+    I hope you're doing well!
+
+    I'm looking for the portfolio manager and value of portfolio
+    #44123BCD. Much appreciated.
+
+    Thanks!
+    ```
+
+    ![](media/media/image23.png)
 
 2.  Make sure you receive the email in your training user's inbox.
 
 3.  In the **Overview** tab, go to the **Triggers** section and
-    select **Test trigger**.\
-    ![](media/media/image24.png){width="6.25in"
-    height="3.3645833333333335in"}
+    select **Test trigger**.
+
+    ![](media/media/image24.png)
 
 4.  Select the **trigger instance** and then **Start testing.**
 
-![](media/media/image25.png){width="6.5in" height="5.364583333333333in"}
+    ![](media/media/image25.png)
 
 5.  The execution happens and you can see the updates and the flow in
     the Test pane.
 
-![](media/media/image26.png){width="6.25in"
-height="3.1979166666666665in"}
+    ![](media/media/image26.png)
 
 ## Summary
 
