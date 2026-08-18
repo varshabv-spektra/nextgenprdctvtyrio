@@ -73,26 +73,24 @@ switching tools.
 1.  Sign in to the <https://m365.cloud.microsoft/> using your lab
     credentials.
 
-![](media/media/image2.png){width="4.75in"
-height="3.7604166666666665in"}
+    ![](media/media/image2.png)
 
-2.  Enter your password.\
-    ![](media/media/image3.png){width="4.5in"
-    height="3.6354166666666665in"}
+2.  Enter your password.
+
+    ![](media/media/image3.png)
 
 3.  After successful login, you will see **Copilot Chat** home page. 
 
-![](media/media/image5.png){width="5.708333333333333in"
-height="3.3229166666666665in"}
+    ![](media/media/image5.png)
 
 4.  Select the hamburger icon.
 
-![](media/media/image6.png){width="6.5in" height="3.1979166666666665in"}
+    ![](media/media/image6.png)
 
 5.  The Create section provides you some pre-built prompts for creating
     visuals.
 
-![](media/media/image7.png){width="6.5in" height="4.583333333333333in"}
+    ![](media/media/image7.png)
 
 ## Exercise 2: Create an Executive Announcement Image (Leadership Communication)
 
@@ -105,37 +103,39 @@ initiative** to the organization on LinkedIn or Viva Engage.
 
 1.  Paste the following prompt:
 
-**+++**"*Create a LinkedIn post image announcing a new company-wide AI
-transformation initiative. Use a professional, executive tone with a
-clean layout suitable for senior leadership communication."+++*
+    ```
+    "Create a LinkedIn post image announcing a new company-wide AI
+    transformation initiative. Use a professional, executive tone with a
+    clean layout suitable for senior leadership communication."
+    ```
 
-![](media/media/image8.png){width="6.5in" height="1.25in"}
+    ![](media/media/image8.png)
 
 2.  Review the image generated based on the provided prompt, with the
     product launch image with the logo.
 
-![](media/media/image9.png){width="6.5in" height="4.489583333333333in"}
+    ![](media/media/image9.png)
 
 3.  You can download the image generated, click on **Download** on the
     top right corner of the **Create** window to download thee image.
 
-![](media/media/imagea.png){width="6.5in" height="4.447916666666667in"}
+    ![](media/media/imagea.png)
 
-4.  **Contextual action toolbar: **This toolbar contains quick actions
+4.  **Contextual action toolbar** This toolbar contains quick actions
     you can use to refine and control the image or visual you're working
     on---without leaving the Create experience. 
 
-- It gives you direct editing and enhancement options for the selected
+    - It gives you direct editing and enhancement options for the selected
   image or visual. 
 
-- Think of it as: 
+    - Think of it as: 
 
-*"Everything you might want to adjust---grouped in one place."* \
-![](media/media/imageb.png){width="6.5in" height="4.46875in"}
+    *"Everything you might want to adjust---grouped in one place."* \
+    ![](media/media/imageb.png)
 
-5.  The edit image pane opens up from the right hand side:\
-    ![](media/media/imagec.png){width="6.25in"
-    height="3.6770833333333335in"}
+5.  The edit image pane opens up from the right hand side:
+
+    ![](media/media/imagec.png)
 
 ### Expected Outcome
 
@@ -156,17 +156,21 @@ As a CHRO or COO, you send a monthly leadership update to all employees.
 1.  In the **Design a banner** create window, paste the following prompt
     and click **Create** to generate the banner.
 
-*+++Create a banner for an internal leadership newsletter.*
+    ```
+    *Create a banner for an internal leadership newsletter.*
 
-*Use a modern, minimal design with a white background.*
+    *Use a modern, minimal design with a white background.*
 
-*Title: "Leadership Update -- This Month"*
+    *Title: "Leadership Update -- This Month"*
 
-*Font should feel professional and executive-friendly.+++*\
-![](media/media/imaged.png){width="6.5in" height="4.46875in"}
+    *Font should feel professional and executive-friendly.
+    ```
 
-2.  Review the banners generated for monthly updates newsletters:\
-    ![](media/media/imagee.png){width="6.25in" height="3.03125in"}
+    ![](media/media/imaged.png)
+
+2.  Review the banners generated for monthly updates newsletters:
+
+    ![](media/media/imagee.png)
 
 **Note**: Multiple banners will be generated based on the provided
 prompt. Review the options and select the one you prefer.
@@ -187,17 +191,19 @@ operating model or policy**.
 
 1.  Paste the following prompt and click **Generate** the image.
 
-**+++***Create a professional image to support an internal change
-initiative announcement.*
+    ```
+    *Create a professional image to support an internal change
+    initiative announcement.*
 
-*Use confident, modern visuals and include text: Driving Change.
-Delivering Impact.+++*\
-![](media/media/imagef.png){width="6.5in" height="4.46875in"}
+    *Use confident, modern visuals and include text: Driving Change.
+    Delivering Impact.
+    ```
 
-2.  Review the promotional campaign image generated for **Driving
-    Change, Delivering Impact Image.**\
-    ![](media/media/image10.png){width="6.25in"
-    height="2.7744389763779527in"}
+    ![](media/media/imagef.png)
+
+2.  Review the promotional campaign image generated for **Driving Change, Delivering Impact Image.**
+
+    ![](media/media/image10.png)
 
 ***Note**: User can edit, copy, download image as needed from the
 **Transform with AI** toolbar from the right-hand side of the **Create
@@ -220,15 +226,17 @@ instead of a long email.
 
 1.  In the prompt box, paste the following prompt:
 
-> *+++Create a short executive update video.*
->
-> *Use a clean, modern style with light background music.*
->
-> *Include on-screen text:*
->
-> *"Executive Update: Key Priorities This Month.+++*\
-> ![](media/media/image11.png){width="6.5in"
-> height="4.479166666666667in"}
+    ```
+    *Create a short executive update video.*
+
+    *Use a clean, modern style with light background music.*
+
+    *Include on-screen text:*
+
+    *"Executive Update: Key Priorities This Month.*
+    ```
+
+    ![](media/media/image11.png)
 
 2.  Review the promotional short mp4 video generated.
 
@@ -237,8 +245,9 @@ instead of a long email.
 
 4.  You can also download the executive update video pacakage that
     contains the video as well as music. Click on the link to download
-    the video.\
-    ![](media/media/image12.png){width="6.25in" height="4.3125in"}
+    the video.
+    
+    ![](media/media/image12.png)
 
 ### Expected Outcome
 

@@ -56,62 +56,51 @@ In this exercise, you will create a SharePoint site and upload the
 sample documents there which will be used later in this lab.
 
 1.  From a new browser, navigate to <https://m365.cloud.microsoft/chat/>
-    and login with your lab credentials.\
-    ![](media/media/image22.png){width="4.791666666666667in"
-    height="4.621639326334209in"}
+    and login with your lab credentials.
+    ![](media/media/image22.png)
 
-2.  Enter Temporary Access Pass.\
-    ![](media/media/image23.png){width="5.544418197725284in"
-    height="3.7916666666666665in"}
+2.  Enter Temporary Access Pass.
+
+    ![](media/media/image23.png)
 
 3.  Select Yes (or No) on the "Stay signed in?" prompt. This same
     sign-in sequence appears every time you\'re asked to log in later in
     this lab.
 
-![](media/media/image24.png){width="4.145100612423447in"
-height="3.2291666666666665in"}
+    ![](media/media/image24.png)
 
-4.  Select Apps from the left pane and then select SharePoint once the
-    Apps are loaded.
+4.  Select the **App launcher** icon from the top-left corner, and then select **SharePoint**.
 
-5.  Select + Create site from the SharePoint page.
+    ![](media/media/l6e1s5.png)
 
-![](media/media/image25.png){width="6.458333333333333in"
-height="3.6770833333333335in"}
+5. In SharePoint, select **Build** from the left navigation, and then select **Site**.
 
-6.  Select Communication site from the Select the site type page.
+    ![](media/media/l6e1s6.2.png)
 
-![](media/media/image26.png){width="6.458333333333333in"
-height="3.6875in"}
+1. Under **Select a site template**, select **Communication site**. Select the **Standard communication** template.
 
-7.  Select a template to be used (for example Standard communication),
-    then select Use template.
+    ![](media/media/l6e5s7.png)
 
-![](media/media/image27.png){width="6.458333333333333in"
-height="3.6979166666666665in"}
+1. Review the **Standard communication** template and select **Use template**.
 
-8.  Preview the template, then select Use template.\
-    ![](media/media/image28.png){width="6.458333333333333in"
-    height="3.6979166666666665in"}
+    ![](media/media/l6e5s8.png)
 
-9.  Enter Enterprise as the Site name and select Next.
+1. In the **Site name** field, enter **Enterprise Knowledge**. Verify that the site address is available, keep the language as **English**, and select **Create site**.
 
-![](media/media/image29.png){width="6.458333333333333in"
-height="3.7291666666666665in"}
+    ![](media/media/l6e5s10.png)
 
-10. In the next screen, select Create site.\
-    ![](media/media/image1b.png){width="6.25in" height="3.875in"}
+1. Wait for the site creation to complete. When **Your site is ready!** appears, select **Go to site**.
+
+    ![](media/media/l6e5s11.1.png)
 
 11. Once created, note down the URL of this site.
 
-![](media/media/image2a.png){width="6.458333333333333in"
-height="3.65625in"}
+    ![](media/media/image2a.png)
 
 12. Select Documents from the menu bar. Select + Create or upload →
     Files upload. Upload the following documents:
 
-![](media/media/image2b.png){width="6.458333333333333in"
-height="3.6979166666666665in"}
+    ![](media/media/image2b.png)
 
 ## Exercise 2: Creating an agent for Microsoft 365 Copilot Chat
 
@@ -123,24 +112,23 @@ Microsoft Copilot Studio and host it in Microsoft 365 Copilot Chat.
 
 2.  Select +Create blank agent.
 
-![](media/media/image2c.png){width="6.458333333333333in"
-height="3.6979166666666665in"}
+    ![](media/media/image2c.png)
 
 3.  Enter the agent name and select Create.
 
-Name - HR Advisor
+    - Name - HR Advisor
 
-![](media/media/image2d.png){width="6.5in"
-height="3.7083333333333335in"}
+       ![](media/media/image2d.png)
 
-4.  Paste the description as follows:\
-    \
-    +++HR Advisor is an AI-powered employee support assistant that helps
+4.  Paste the description as follows:
+    
+    ```
+    HR Advisor is an AI-powered employee support assistant that helps
     employees quickly find answers to HR-related questions using
-    information from the organizations Employee Handbook.+++\
-    \
-    ![](media/media/image2e.png){width="6.25in"
-    height="3.548386920384952in"}
+    information from the organizations Employee Handbook.
+    ```
+
+    ![](media/media/image2e.png)
 
 \[!Alert\] This exercise now provisions the agent shell first and layers
 on description, instructions, and model choice afterward --- if you
@@ -149,22 +137,23 @@ expected; add them on the Overview tab as described above.
 
 ## Exercise 3: Adding knowledge to the agent
 
-1.  Scroll down to the Knowledge section.\
-    ![](media/media/image1c.png){width="6.25in"
-    height="3.3854286964129483in"}
+1.  Scroll down to the Knowledge section.
+
+    ![](media/media/image1c.png)
 
 2.  In the SharePoint link placeholder, paste the link copied in
     Exercise 1:\
-    ![](media/media/image1d.png){width="5.765944881889764in"
-    height="4.21875in"}\
-    ![](media/media/image1e.png){width="4.781977252843395in"
-    height="3.4270833333333335in"}
+    ![](media/media/image1d.png)
 
-3.  Preview the Knowledge source attached:\
-    ![](media/media/image31.png){width="6.25in"
-    height="3.5729166666666665in"}
+    ![](media/media/image1e.png)
 
-.![](media/media/image32.png){width="6.5in" height="3.9375in"}
+3.  Preview the Knowledge source attached:
+
+    ![](media/media/image31.png)
+
+1. In **Copilot Studio**, open the **HR Advisor** agent and select **Publish**.
+
+    ![](media/media/l61.png) 
 
 ## Exercise 4: Governing the agent in the Microsoft 365 admin center
 
@@ -172,43 +161,17 @@ expected; add them on the Overview tab as described above.
     credentials (username, then Temporary Access Pass; select Yes if
     prompted to stay signed in).
 
-2.  Select Agents from the left navigation, then select All agents.
+1. In the **Microsoft 365 admin center**, navigate to **Agents > All agents**, and select **HR Advisor**.
 
-![](media/media/image36.png){width="6.458333333333333in"
-height="3.2708333333333335in"}
+    ![](media/media/l62.png)
 
-3.  Confirm the Total agents tile shows the org-wide agent count, and
-    locate Agentic HR in the Registry list.
+3. In the **Block agent** window, select **Block agent**, optionally provide a reason and details, and then select **Save**.
 
-![](media/media/image37.png){width="6.458333333333333in"
-height="3.3333333333333335in"}
+    ![](media/media/l64.png)
 
-4.  Open Agentic HR and review the tabs: Details, Users, Data & tools,
-    Security, Permissions, Activity.
+4. Return to **Copilot Studio** and verify that the **HR Advisor** agent displays **Agent blocked** under **Protection status**.
 
-5.  On the Data & tools tab, confirm the agent\'s Capabilities (Can
-    read: OneDrive files, SharePoint files) and that Shared Documents
-    appears under Knowledge.
-
-![](media/media/image38.png){width="6.458333333333333in"
-height="5.010416666666667in"}
-
-Note: Select Assign new owner, search for a user by name or email,
-select them from the results, and select Assign.
-
-![](media/media/image39.png){width="6.458333333333333in"
-height="4.947916666666667in"}
-
-![](media/media/image3a.png){width="6.458333333333333in"
-height="5.020833333333333in"}
-
-![](media/media/image3b.png){width="6.458333333333333in"
-height="1.65625in"}
-
-Note: Blocking the agent removes it from every user who has installed
-it. Only do this at the very end of the lab if your instructor asks you
-to demonstrate governance controls --- otherwise skip the Block step
-above so the agent stays usable for further testing.
+    ![](media/media/l65.png)
 
 ## Summary
 
