@@ -269,8 +269,6 @@ account cancellation) or when confidence is low.
 
 ## Lab Summary
 
-### **Lab Summary**
-
 In this lab, you secured a retail AI agent by implementing **layered
 security and governance controls** to protect customer and order
 information while keeping the agent focused on its intended business

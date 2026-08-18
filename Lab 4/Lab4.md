@@ -88,11 +88,11 @@ intelligent and trustworthy.
 10. Download the following links and **upload** them in your SharePoint
     site:
 
-- Zava Project Portfolio.xlsx
+    - Zava Project Portfolio.xlsx
 
-- Zava Customer Playbook.docx
+    - Zava Customer Playbook.docx
 
-    ![](media/media/dxe1t1s12.png)
+        ![](media/media/dxe1t1s12.png)
 
 >**Note:** *Before testing your Copilot Agent, ensure that all required
 source documents (such as project updates, SOP files, product
@@ -175,10 +175,9 @@ its responses. This step reflects the Trust dimension of Microsoft IQ
 
     ![](media/media/dxe1t3s2.png)
 
-3.  Review the output:\
-    ![](media/media/image4e.png)
+3.  Review the output:
 
-## 
+    ![](media/media/image4e.png)
 
 # Exercise 2: Advanced Instruction Authoring in Copilot Studio
 
@@ -197,22 +196,23 @@ agent's domain.
 
     ![](media/media/dxe1t3s3.png)
 
-3.  Paste the name of the topic-\
-    "*Out-of-Scope Redirect*."\
+3.  Paste the name of the topic-
+    "*Out-of-Scope Redirect*."
+
     ![](media/media/image2e.png)
 
 4.  In the Trigger section, paste the following phrases as trigger
     phrases (one per line):
 
-- *I need help with something else*
+    - *I need help with something else*
 
-- *Can you help me with HR?*
+    - *Can you help me with HR?*
 
-- *This is not related to my work*
+    - *This is not related to my work*
 
-- *I have a different question*
+    - *I have a different question*
 
-    ![](media/media/image2f.png)
+        ![](media/media/image2f.png)
 
 5. Click **+ icon** below the trigger node to add a Message node.
 
@@ -345,13 +345,14 @@ out-of-scope queries.
     ![](media/media/image3a.png)
 
     ![](media/media/dxe1t3s5.png)
+
 ## Task 3: Add the Secondary Agent to the Primary Agent. 
 
 1. Go to the **Project Knowledge Assistant** Agent.
 
     ![](media/media/image3b.png)
 
-2. In the **Agent** section, Select **+Add.**
+2. In the **Agents** section, Select **+Add.**
 
     ![](media/media/image1f.png)
 

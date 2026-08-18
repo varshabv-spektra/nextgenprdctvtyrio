@@ -6,23 +6,23 @@
 
 Zava Retail, a rapidly growing omnichannel retailer, faced increasing operational complexity due to high volumes of communication across customers, suppliers, and internal teams. With expansion across e-commerce platform, 50+ physical stores, vendor and supplier ecosystem, customer support and marketing teams, email became the primary but inefficient channel for critical business interactions. Zava Retail teams receive hundreds of emails daily from:
 
-- Customers (complaints, returns, inquiries)
+   - Customers (complaints, returns, inquiries)
 
-- Suppliers (inventory updates, delays)
+   - Suppliers (inventory updates, delays)
 
-- Internal teams (approvals, escalations)
+   - Internal teams (approvals, escalations)
 
 This results in:
 
-- Missed urgent emails
+   - Missed urgent emails
 
-- Slow response times
+   - Slow response times
 
-- Employee burnout due to overload
+   - Employee burnout due to overload
 
-- Lack of visibility into priorities
+   - Lack of visibility into priorities
 
-To address this challenge, Zava Retail is looking to implement an AI-powered Intelligent Workflow Agent using Microsoft 365 Copilot to automate email triage, highlight urgent and actionable items, deliver insights to workload and productivity, and provide real-time productivity insights.
+   To address this challenge, Zava Retail is looking to implement an AI-powered Intelligent Workflow Agent using Microsoft 365 Copilot to automate email triage, highlight urgent and actionable items, deliver insights to workload and productivity, and provide real-time productivity insights.
 
 **Key Personas**
 
@@ -54,7 +54,7 @@ The operations head at Zava Retail oversees the business operations across depar
 
 - Permission to access:
 
-    - Microsoft Graph / Insights data
+- Microsoft Graph / Insights data
 
 **DLP & Connector Requirements (Admin setup)**
 
@@ -183,19 +183,19 @@ currently using to execute this lab.
 
    ![](media/media/image21.png)
 
-Once the test process is completed, review that it:
+   Once the test process is completed, review that it:
 
-- Creates scheduled trigger (weekday mornings)
+   - Creates scheduled trigger (weekday mornings)
 
-- Connects to:
+   - Connects to:
 
-    - Outlook (email ingestion)
+      - Outlook (email ingestion)
 
-    - Dataverse AI (reasoning)
+      - Dataverse AI (reasoning)
 
-    - Teams (output delivery)
+      - Teams (output delivery)
 
-- Applies AI reasoning for categorization and summarization.
+   - Applies AI reasoning for categorization and summarization.
 
 You did not configure connectors manually, Copilot did it for you.
 
